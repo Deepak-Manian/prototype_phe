@@ -1,0 +1,306 @@
+/* ============================================================
+   PHE Industrial — Global Theme CSS
+   Supplements Tailwind with custom utilities and component styles
+   ============================================================ */
+
+/* ── LOGO ── */
+/* Logo has white bg — invert it on dark nav for clean display */
+nav .logo-img {
+    filter: brightness(0) invert(1);
+}
+/* Keep original colors in footer (dark bg works fine with invert too) */
+footer .logo-img {
+    filter: brightness(0) invert(1);
+}
+
+/* ── HERO VIDEO ── */
+.hero-video-bg {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+}
+.hero-video-bg video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.45;
+}
+
+/* ── MATERIAL SYMBOLS ── */
+.material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+.material-symbols-filled {
+    font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+/* ── MACHINED EDGE: subtle inset highlight ── */
+.machined-edge {
+    box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.12);
+}
+
+/* ── GLASS PANEL ── */
+.glass-panel {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+}
+
+/* ── GLASS CARD (alias) ── */
+.glass-card {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+}
+
+/* ── GRADIENTS ── */
+.hero-gradient {
+    background: linear-gradient(135deg, #003131 0%, #114948 100%);
+}
+.machined-gradient {
+    background: linear-gradient(135deg, #003131 0%, #114948 100%);
+}
+.industrial-gradient {
+    background: linear-gradient(135deg, #003131 0%, #114948 100%);
+}
+
+/* ── NAVIGATION ── */
+.nav-link {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+    letter-spacing: -0.025em;
+    transition: color 0.2s ease;
+}
+.nav-link-active {
+    color: #f59e0b; /* amber-500 */
+    border-bottom: 2px solid #f59e0b;
+    padding-bottom: 4px;
+}
+.nav-link-default {
+    color: #134e4a; /* teal-800 */
+}
+.nav-link-default:hover {
+    color: #d97706; /* amber-600 */
+}
+/* On dark nav (homepage) */
+.nav-dark .nav-link-default {
+    color: rgba(240, 253, 250, 0.8); /* teal-50/80 */
+}
+.nav-dark .nav-link-default:hover {
+    color: #ffffff;
+}
+
+/* ── FOOTER ── */
+.footer-link {
+    color: rgba(167, 243, 208, 0.7); /* teal-200/70 */
+    font-size: 0.875rem;
+    letter-spacing: 0.025em;
+    transition: color 0.2s ease, transform 0.3s ease;
+    display: inline-block;
+}
+.footer-link:hover {
+    color: #f59e0b; /* amber-400 */
+    transform: translateX(4px);
+}
+
+/* ── BUSY HOURS BARS (contact page) ── */
+.busy-bar {
+    flex: 1;
+    border-radius: 2px 2px 0 0;
+    background-color: rgba(17, 73, 72, 0.2); /* primary-container/20 */
+    transition: background-color 0.3s ease;
+}
+.busy-bar.active {
+    background-color: #ffc30a; /* secondary-container */
+}
+.busy-bar:hover {
+    background-color: rgba(17, 73, 72, 0.4);
+}
+.busy-bar.active:hover {
+    background-color: #f9be00;
+}
+
+/* ── TIMELINE (history page) ── */
+.timeline-node {
+    width: 1rem;
+    height: 1rem;
+    background-color: #ffc30a;
+    border-radius: 50%;
+    box-shadow: 0 0 0 8px rgba(255, 195, 10, 0.2);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+.timeline-card {
+    background-color: #ffffff;
+    padding: 2rem;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+    transition: box-shadow 0.3s ease;
+}
+.timeline-card:hover {
+    box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+}
+
+/* ── PROCESS STEPS (infra page) ── */
+.process-step-circle {
+    width: 3rem;
+    height: 3rem;
+    background-color: #003131;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    position: relative;
+    z-index: 10;
+    transition: background-color 0.2s ease;
+}
+.process-step-circle:hover,
+.process-step:hover .process-step-circle {
+    background-color: #785a00;
+}
+
+/* ── PRODUCT GRID CARDS (catalog page) ── */
+.product-card-hover {
+    transition: transform 0.2s ease;
+}
+.product-card-hover:hover {
+    transform: translateY(-4px);
+}
+
+/* ── SPEC BAR (catalog deep dive) ── */
+.spec-bar {
+    height: 4px;
+    width: 100%;
+    background-color: #e2e2e2;
+    overflow: hidden;
+    margin-top: 0.75rem;
+}
+.spec-bar-fill {
+    height: 100%;
+    background-color: #ffc30a;
+    transition: width 1s ease;
+}
+
+/* ── STAT COUNTER ── */
+.stat-number {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 900;
+    color: #ffc30a;
+}
+
+/* ── CTA BUTTON PRIMARY ── */
+.btn-primary {
+    background-color: #003131;
+    color: #ffffff;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+.btn-primary:hover {
+    background-color: #114948;
+}
+.btn-primary:active {
+    transform: scale(0.99);
+}
+
+/* ── CTA BUTTON SECONDARY (amber) ── */
+.btn-secondary {
+    background-color: #ffc30a;
+    color: #6d5200;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    transition: filter 0.2s ease, transform 0.1s ease;
+}
+.btn-secondary:hover {
+    filter: brightness(1.08);
+}
+.btn-secondary:active {
+    transform: scale(0.98);
+}
+
+/* ── SECTION DIVIDER ACCENT ── */
+.accent-line {
+    height: 4px;
+    width: 5rem;
+    background-color: #ffc30a;
+}
+
+/* ── SCROLL BEHAVIOUR ── */
+html {
+    scroll-behavior: smooth;
+}
+
+/* ── SELECTION ── */
+::selection {
+    background-color: #ffdf9b;
+    color: #251a00;
+}
+
+/* ── MOBILE NAV OVERLAY ── */
+#mobile-nav {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 49, 49, 0.97);
+    z-index: 200;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+#mobile-nav.open {
+    display: flex;
+}
+#mobile-nav a {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: rgba(240, 253, 250, 0.8);
+    letter-spacing: -0.025em;
+    transition: color 0.2s ease;
+}
+#mobile-nav a:hover,
+#mobile-nav a.active {
+    color: #ffc30a;
+}
+#mobile-nav-close {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    color: rgba(240, 253, 250, 0.6);
+    cursor: pointer;
+    font-size: 2rem;
+    background: none;
+    border: none;
+}
+
+/* ── ANIMATE ON SCROLL ── */
+.anim-fade-up {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.anim-fade-up.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+.anim-fade-up.delay-1 { transition-delay: 0.1s; }
+.anim-fade-up.delay-2 { transition-delay: 0.2s; }
+.anim-fade-up.delay-3 { transition-delay: 0.3s; }
+.anim-fade-up.delay-4 { transition-delay: 0.4s; }
+.anim-fade-up.delay-5 { transition-delay: 0.5s; }
+
+/* ── BUSY WIDGET LAYOUT ── */
+.busy-widget-bars {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    height: 6rem;
+    gap: 3px;
+}
