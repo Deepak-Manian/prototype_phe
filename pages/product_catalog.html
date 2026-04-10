@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>Rig Fleet — PHE | Periyasamy Hydraulic Equipments</title>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@400;500;600&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "surface-dim": "#dadada", "surface-bright": "#f9f9f9", "surface": "#f9f9f9",
+            "primary": "#003131", "on-primary": "#ffffff", "on-tertiary": "#ffffff", "on-secondary": "#ffffff",
+            "on-primary-fixed": "#00201f", "surface-container-low": "#f3f3f3", "surface-container": "#eeeeee",
+            "on-secondary-fixed": "#251a00", "inverse-primary": "#9cd0ce", "secondary": "#785a00",
+            "on-primary-container": "#84b7b5", "on-surface-variant": "#404848", "on-secondary-container": "#6d5200",
+            "on-primary-fixed-variant": "#184e4d", "on-background": "#1a1c1c", "on-tertiary-container": "#afaeae",
+            "tertiary-container": "#414242", "tertiary-fixed-dim": "#c7c6c6", "secondary-fixed-dim": "#f9be00",
+            "on-error": "#ffffff", "primary-container": "#114948", "on-error-container": "#93000a",
+            "surface-container-highest": "#e2e2e2", "primary-fixed": "#b8ecea", "outline-variant": "#bfc8c7",
+            "primary-fixed-dim": "#9cd0ce", "on-surface": "#1a1c1c", "secondary-container": "#ffc30a",
+            "background": "#f9f9f9", "inverse-surface": "#2f3131", "on-tertiary-fixed": "#1b1c1c",
+            "tertiary-fixed": "#e3e2e2", "surface-container-lowest": "#ffffff", "outline": "#707978",
+            "error-container": "#ffdad6", "secondary-fixed": "#ffdf9b", "inverse-on-surface": "#f1f1f1",
+            "error": "#ba1a1a", "on-tertiary-fixed-variant": "#464747", "tertiary": "#2b2c2c",
+            "surface-container-high": "#e8e8e8", "on-secondary-fixed-variant": "#5b4300",
+            "surface-variant": "#e2e2e2", "surface-tint": "#346665"
+          },
+          borderRadius: { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" },
+          fontFamily: { "headline": ["Space Grotesk"], "body": ["Inter"], "label": ["Work Sans"] }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="../css/theme.css"/>
+</head>
+<body class="bg-surface text-on-surface font-body">
+
+<!-- MOBILE NAV -->
+<div id="mobile-nav">
+  <button id="mobile-nav-close" aria-label="Close menu">
+    <span class="material-symbols-outlined text-white text-4xl">close</span>
+  </button>
+  <a href="../index.html">Home</a>
+  <a href="product_catalog.html" class="active">Rig Fleet</a>
+  <a href="history_roadmap.html">About Us</a>
+  <a href="infra_process.html">Infrastructure</a>
+  <a href="contact_operations.html">Contact</a>
+  <a href="contact_operations.html" style="color:#ffc30a; margin-top:1rem;">Request Quote</a>
+</div>
+
+<!-- NAV -->
+<nav class="fixed top-0 w-full z-50 bg-teal-950/95 backdrop-blur-md shadow-2xl shadow-teal-950/20">
+  <div class="flex justify-between items-center w-full px-8 py-4 max-w-screen-2xl mx-auto">
+    <a href="../index.html">
+      <img alt="PHE Logo" class="logo-img w-auto object-contain h-10 md:h-14" src="../phe_logo.png"/>
+    </a>
+    <div class="hidden md:flex items-center space-x-8">
+      <a class="nav-link text-sm uppercase text-slate-100/80 hover:text-white transition-colors" href="../index.html">Home</a>
+      <a class="nav-link nav-link-active text-sm uppercase" href="product_catalog.html">Rig Fleet</a>
+      <a class="nav-link text-sm uppercase text-slate-100/80 hover:text-white transition-colors" href="history_roadmap.html">About Us</a>
+      <a class="nav-link text-sm uppercase text-slate-100/80 hover:text-white transition-colors" href="infra_process.html">Infrastructure</a>
+      <a class="nav-link text-sm uppercase text-slate-100/80 hover:text-white transition-colors" href="contact_operations.html">Contact</a>
+    </div>
+    <div class="flex items-center gap-4">
+      <a href="contact_operations.html" class="btn-secondary px-6 py-2.5 text-sm machined-edge hidden md:block">Request Quote</a>
+      <button id="mobile-nav-open" class="md:hidden text-white" aria-label="Open menu">
+        <span class="material-symbols-outlined">menu</span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- PAGE HERO -->
+<section class="pt-32 pb-16 bg-primary relative overflow-hidden">
+  <div class="absolute inset-0 opacity-10">
+    <img src="../3.jpg" alt="" class="w-full h-full object-cover grayscale"/>
+  </div>
+  <div class="container mx-auto px-8 relative z-10">
+    <span class="text-secondary-container font-label font-bold uppercase tracking-widest text-sm">Our Products</span>
+    <h1 class="font-headline text-5xl md:text-7xl font-black text-white mt-4 mb-6 leading-none tracking-tighter">Elite Rig Fleet</h1>
+    <p class="text-on-primary-container text-xl max-w-2xl leading-relaxed">
+      From 1,200 ft water wells to deep mine reverse circulation rigs — every PHE machine is precision-engineered, field-tested, and backed by 38+ years of expertise.
+    </p>
+  </div>
+</section>
+
+<!-- WARRANTY STRIP -->
+<div class="bg-secondary-container py-4">
+  <div class="container mx-auto px-8 flex flex-wrap gap-8 justify-center md:justify-between items-center">
+    <div class="flex items-center gap-2 text-on-secondary-container font-label font-bold text-sm uppercase tracking-wider">
+      <span class="material-symbols-outlined text-base">verified</span> 1-Year Full Warranty on All Components
+    </div>
+    <div class="flex items-center gap-2 text-on-secondary-container font-label font-bold text-sm uppercase tracking-wider">
+      <span class="material-symbols-outlined text-base">support_agent</span> On-Call Technician Support
+    </div>
+    <div class="flex items-center gap-2 text-on-secondary-container font-label font-bold text-sm uppercase tracking-wider">
+      <span class="material-symbols-outlined text-base">public</span> Domestic & Export Orders
+    </div>
+  </div>
+</div>
+
+<!-- PRODUCT GRID -->
+<section class="py-24 bg-surface">
+  <div class="container mx-auto px-8">
+
+    <!-- Category: Water Well -->
+    <div class="mb-6 flex items-center gap-6">
+      <div class="accent-line"></div>
+      <h2 class="font-headline text-2xl font-bold uppercase tracking-widest text-primary">Water Well Rigs</h2>
+    </div>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-20">
+
+      <!-- Product 1 -->
+      <div class="bg-surface-container-lowest flex flex-col group product-card-hover anim-fade-up border-b-4 border-transparent hover:border-secondary-container transition-all">
+        <div class="h-64 overflow-hidden relative">
+          <img alt="Water Well Rig 1200ft — PHE" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="../3.jpg"/>
+          <div class="absolute top-4 left-4 bg-primary text-white px-3 py-1 text-xs font-bold font-label uppercase">Box Mounting</div>
+        </div>
+        <div class="p-8 flex flex-col flex-grow">
+          <h3 class="font-headline text-xl font-bold mb-1">Water Well & Mines</h3>
+          <p class="text-secondary font-label font-bold text-sm mb-4">Model: Ashok Leyland 2518</p>
+          <div class="grid grid-cols-2 gap-3 mb-6">
+            <div class="border-l-2 border-secondary-container pl-3">
+              <span class="block text-[10px] uppercase font-label text-on-surface-variant tracking-wider">Max Depth</span>
+              <span class="font-headline font-bold text-base">1,200 FT</span>
+            </div>
+            <div class="border-l-2 border-secondary-container pl-3">
+              <span class="block text-[10px] uppercase font-label text-on-surface-variant tracking-wider">Feed Cylinder</span>
+              <span class="font-headline font-bold text-base">140 Feed</span>
+            </div>
+            <div class="border-l-2 border-outline-variant pl-3">
+              <span class="block text-[10px] uppercase font-label text-on-surface-variant tracking-wider">Grid Bed</span>
+              <span class="font-headline font-bold text-base">10"</span>
+            </div>
+            <div class="border-l-2 border-outline-variant pl-3">
+              <span class="block text-[10px] uppercase font-label text-on-surface-variant tracking-wider">Feed Rod</span>
+              <span class="font-headline font-bold text-base">6½×20</span>
+            </div>
+          </div>
+          <div class="mb-4">
+            <div class="flex justify-between text-xs font-label text-on-surface-variant mb-1"><span>Depth Rating</span><span>60%</span></div>
+            <div class="spec-bar"><div class="spec-bar-fill" data-width="60%"></div></div>
+          </div>
+          <a href="contact_operations.html" class="mt-auto block w-full py-3 bg-surface-container-highest font-bold text-sm uppercase tracking-widest text-primary text-center hover:bg-primary hover:text-white transition-all">
+            Enquire Now
+          </a>
+        </div>
+      </div>
+
+      <!-- Product 2 -->
+      <div class="bg-surface-container-lowest flex flex-col group product-card-hover anim-fade-up delay-1 border-b-4 border-transparent hover:border-secondary-container transition-all">
+        <div class="h-64 overflow-hidden relative">
+          <img alt="Water Well & Mines 1700ft — PHE" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="../5.jpg"/>
+          <div class="absolute top-4 left-4 bg-secondary-container text-on-secondary-container px-3 py-1 text-xs font-bold font-label uppercase">Best Seller</div>
+        </div>
+        <div class="p-8 flex flex-col flex-grow">
+          <h3 class="font-headline text-xl font-bold mb-1">Water Well & Mines</h3>
+          <p class="text-secondary font-label font-bold text-sm mb-4">Model: Ashok Leyland 2523</p>
+          <div class="grid grid-cols-2 gap-3 mb-6">
+            <div class="border-l-2 border-secondary-container pl-3">
+              <span class="block text-[10px] uppercase font-label text-on-surface-variant tracking-wider">Max Depth</span>
+              <span class="font-headline font-bold text-base">1,700 FT</span>
+            </div>
+            <div class="border-l-2 border-secondary-container pl-3">
+              <span class="block text-[10px] uppercase font-label text-on-surface-variant tracking-wider">Mounting</span>
+              <span class="font-headline font-bold text-base">Sensor</span>
+            </div>
+            <div class="border-l-2 border-outline-variant pl-3">
+              <span class="block text-[10px] uppercase font-label text-on-surface-variant tracking-wider">Grid Bed</span>
+              <span class="font-headline font-bold text-base">10"</span>
+            </div>
+            <div class="border-l-2 border-outline-variant pl-3">
+              <span class="block text-[10px] uppercase font-label text-on-surface-variant tracking-wider">Feed Rod</span>
+              <span class="font-headline font-bold text-base">6½×20</span>
+            </div>
+          </div>
+          <div class="mb-4">
+            <div class="flex justify-between text-xs font-label text-on-surface-variant mb-1"><span>Depth Rating</span><span>80%</span></div>
+            <div class="spec-bar"><div class="spec-bar-fill" data-width="80%"></div></div>
+          </div>
+          <a href="contact_operations.html" class="mt-auto block w-full py-3 bg-surface-container-highest font-bold text-sm uppercase tracking-widest text-primary text-center hover:bg-primary hover:text-white transition-all">
+            Enquire Now
+          </a>
+        </div>
+      </div>
+
+      <!-- Product 3 - Big Master -->
+      <div class="bg-surface-container-lowest flex flex-col group product-card-hover anim-fade-up delay-2 border-b-4 border-transparent hover:border-secondary-container transition-all">
+        <div class="h-64 overflow-hidden relative">
+          <img alt="Water Well Big Master 2000ft — PHE" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="../2.jpg"/>
+          <div class="absolute top-4 left-4 bg-primary text-white px-3 py-1 text-xs font-bold font-label uppercase">Big Master</div>
+        </div>
+        <div class="p-8 flex flex-col flex-grow">
+          <h3 class="font-headline text-xl font-bold mb-1">Water Well — Big Master</h3>
+          <p class="text-secondary font-label font-bold text-sm mb-4">Model: Ashok Leyland 2523</p>
+          <div class="grid grid-cols-2 gap-3 mb-6">
+            <div class="border-l-2 border-secondary-container pl-3">
+              <span class="block text-[10px] uppercase font-label text-on-surface-variant tracking-wider">Max Depth</span>
+              <span class="font-headline font-bold text-base">2,000 FT</span>
+            </div>
+            <div class="border-l-2 border-secondary-container pl-3">
+              <span class="block text-[10px] uppercase font-label text-on-surface-variant tracking-wider">Feed Cylinder</span>
+              <span class="font-headline font-bold text-base">180 Feed</span>
+            </div>
+            <div class="border-l-2 border-outline-variant pl-3">
+              <span class="block text-[10px] uppercase font-label text-on-surface-variant tracking-wider">Grid Bed</span>
+              <span class="font-headline font-bold text-base">130"</span>
+            </div>
+            <div class="border-l-2 border-outline-variant pl-3">
+              <span class="block text-[10px] uppercase font-label text-on-surface-variant tracking-wider">Mounting</span>
+              <span class="font-headline font-bold text-base">Sensor</span>
+            </div>
+          </div>
+          <div class="mb-4">
+            <div class="flex justify-between text-xs font-label text-on-surface-variant mb-1"><span>Depth Rating</span><span>100%</span></div>
+            <div class="spec-bar"><div class="spec-bar-fill" data-width="100%"></div></div>
+          </div>
+          <a href="contact_operations.html" class="mt-auto block w-full py-3 bg-primary text-white font-bold text-sm uppercase tracking-widest text-center hover:bg-primary-container transition-all">
+            Enquire Now
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Category: Mines & Reverse Circulation -->
+    <div class="mb-6 flex items-center gap-6">
+      <div class="accent-line"></div>
+      <h2 class="font-headline text-2xl font-bold uppercase tracking-widest text-primary">Mines & Reverse Circulation</h2>
+    </div>
+    <div class="grid md:grid-cols-2 gap-8 mb-20">
+      <div class="bg-surface-container-lowest flex flex-col group product-card-hover anim-fade-up border-b-4 border-transparent hover:border-secondary-container transition-all">
+        <div class="h-72 overflow-hidden relative">
+          <img alt="Mines & Water Well Rig — PHE" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="../IMG_7194.JPG"/>
+          <div class="absolute top-4 left-4 bg-primary text-white px-3 py-1 text-xs font-bold font-label uppercase">ARC System</div>
+        </div>
+        <div class="p-8">
+          <h3 class="font-headline text-xl font-bold mb-2">Mines & Water Well — ARC</h3>
+          <p class="text-on-surface-variant leading-relaxed mb-6">Automatic Rod Changer system reduces manpower from 12–15 operators to under 2, dramatically increasing productivity in mine and deep water well drilling operations.</p>
+          <div class="grid grid-cols-3 gap-4 mb-6">
+            <div class="border-l-2 border-secondary-container pl-3">
+              <span class="block text-[10px] uppercase font-label text-on-surface-variant">System</span>
+              <span class="font-headline font-bold text-sm">ARC Auto</span>
+            </div>
+            <div class="border-l-2 border-outline-variant pl-3">
+              <span class="block text-[10px] uppercase font-label text-on-surface-variant">Type</span>
+              <span class="font-headline font-bold text-sm">Mines</span>
+            </div>
+            <div class="border-l-2 border-outline-variant pl-3">
+              <span class="block text-[10px] uppercase font-label text-on-surface-variant">Crew</span>
+              <span class="font-headline font-bold text-sm">&lt;2 Operators</span>
+            </div>
+          </div>
+          <a href="contact_operations.html" class="block w-full py-3 bg-surface-container-highest font-bold text-sm uppercase tracking-widest text-primary text-center hover:bg-primary hover:text-white transition-all">Enquire Now</a>
+        </div>
+      </div>
+
+      <div class="bg-primary flex flex-col group product-card-hover anim-fade-up delay-1">
+        <div class="h-72 overflow-hidden relative">
+          <img alt="Reverse Circulation Rig — PHE" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-60" src="../6.jpg"/>
+          <div class="absolute inset-0 flex items-end p-8">
+            <div>
+              <div class="text-xs font-label font-bold uppercase tracking-widest text-secondary-container mb-2">Specialty Rig</div>
+              <h3 class="font-headline text-2xl font-bold text-white">Reverse Circulation</h3>
+            </div>
+          </div>
+        </div>
+        <div class="p-8 flex flex-col flex-grow">
+          <p class="text-on-primary-container leading-relaxed mb-6">Engineered for high-precision deep drilling, the RC rig delivers exceptional sample quality with reduced contamination — ideal for mineral exploration and geological surveys.</p>
+          <a href="contact_operations.html" class="mt-auto block w-full py-3 border border-secondary-container text-secondary-container font-bold text-sm uppercase tracking-widest text-center hover:bg-secondary-container hover:text-on-secondary-container transition-all">Enquire Now</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Category: Specialty -->
+    <div class="mb-6 flex items-center gap-6">
+      <div class="accent-line"></div>
+      <h2 class="font-headline text-2xl font-bold uppercase tracking-widest text-primary">Pole Drill & Support Vehicles</h2>
+    </div>
+    <div class="grid md:grid-cols-2 gap-8">
+      <div class="bg-surface-container-lowest flex flex-col group product-card-hover anim-fade-up border-b-4 border-transparent hover:border-secondary-container transition-all">
+        <div class="h-56 overflow-hidden">
+          <img alt="Pole Drill Rig — PHE" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="../7.jpg"/>
+        </div>
+        <div class="p-8">
+          <h3 class="font-headline text-xl font-bold mb-2">Pole Drill Rig</h3>
+          <p class="text-on-surface-variant leading-relaxed mb-6">Compact and manoeuvrable design for utility pole installation in challenging terrains. Optimised hydraulic reach for precision positioning.</p>
+          <a href="contact_operations.html" class="block w-full py-3 bg-surface-container-highest font-bold text-sm uppercase tracking-widest text-primary text-center hover:bg-primary hover:text-white transition-all">Enquire Now</a>
+        </div>
+      </div>
+      <div class="bg-surface-container-lowest flex flex-col group product-card-hover anim-fade-up delay-1 border-b-4 border-transparent hover:border-secondary-container transition-all">
+        <div class="h-56 overflow-hidden">
+          <img alt="Support Vehicle — PHE" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="../1.jpg"/>
+        </div>
+        <div class="p-8">
+          <h3 class="font-headline text-xl font-bold mb-2">Support Vehicle</h3>
+          <p class="text-on-surface-variant leading-relaxed mb-6">Mobile support unit carrying auxiliary equipment, drill rods, and consumables. Keeps operations continuous and reduces site downtime significantly.</p>
+          <a href="contact_operations.html" class="block w-full py-3 bg-surface-container-highest font-bold text-sm uppercase tracking-widest text-primary text-center hover:bg-primary hover:text-white transition-all">Enquire Now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SUPPLIERS TRUST STRIP -->
+<section class="py-16 bg-surface-container">
+  <div class="container mx-auto px-8">
+    <p class="text-center font-label text-xs uppercase tracking-[0.25em] text-on-surface-variant mb-10">Trusted Component Suppliers</p>
+    <div class="flex flex-wrap justify-center gap-x-12 gap-y-4 items-center">
+      <span class="font-headline font-bold text-primary/60 text-sm uppercase tracking-wider">Ashok Leyland</span>
+      <span class="font-headline font-bold text-primary/60 text-sm uppercase tracking-wider">Atlas Copco</span>
+      <span class="font-headline font-bold text-primary/60 text-sm uppercase tracking-wider">Ingersoll Rand</span>
+      <span class="font-headline font-bold text-primary/60 text-sm uppercase tracking-wider">Wipro Parker</span>
+      <span class="font-headline font-bold text-primary/60 text-sm uppercase tracking-wider">Danfoss</span>
+      <span class="font-headline font-bold text-primary/60 text-sm uppercase tracking-wider">Bucher Permco</span>
+      <span class="font-headline font-bold text-primary/60 text-sm uppercase tracking-wider">AMW LG</span>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="py-24 bg-primary text-white text-center">
+  <div class="container mx-auto px-8 max-w-3xl">
+    <h2 class="font-headline text-4xl font-bold mb-6">Can't Find What You Need?</h2>
+    <p class="text-on-primary-container text-lg mb-10">PHE engineers custom rigs for unique terrain, depth, and application requirements. Tell us your challenge — we'll build the solution.</p>
+    <a href="contact_operations.html" class="btn-secondary px-10 py-5 font-black machined-edge inline-block uppercase tracking-widest">Request Custom Engineering</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-teal-950 w-full pt-16 pb-8">
+  <div class="grid grid-cols-1 md:grid-cols-4 gap-12 max-w-screen-2xl mx-auto px-6">
+    <div>
+      <img alt="PHE Logo" class="logo-img h-12 w-auto object-contain mb-6" src="../phe_logo.png"/>
+      <p class="text-teal-200/70 text-sm leading-relaxed font-body max-w-xs">Setting the global standard for high-performance drilling equipment through relentless engineering excellence.</p>
+      <div class="flex gap-4 mt-6">
+        <a href="mailto:info@pheindia.com" class="text-teal-200/50 hover:text-amber-400 transition-colors"><span class="material-symbols-outlined">mail</span></a>
+        <a href="tel:+919786500188" class="text-teal-200/50 hover:text-amber-400 transition-colors"><span class="material-symbols-outlined">call</span></a>
+      </div>
+    </div>
+    <div>
+      <h4 class="text-white font-headline font-bold uppercase tracking-widest text-xs mb-6">Products</h4>
+      <ul class="space-y-4">
+        <li><a class="footer-link" href="product_catalog.html">Water Well Rigs</a></li>
+        <li><a class="footer-link" href="product_catalog.html">Mines & Water Well</a></li>
+        <li><a class="footer-link" href="product_catalog.html">Reverse Circulation</a></li>
+        <li><a class="footer-link" href="product_catalog.html">Pole Drill</a></li>
+        <li><a class="footer-link" href="product_catalog.html">Support Vehicles</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4 class="text-white font-headline font-bold uppercase tracking-widest text-xs mb-6">Company</h4>
+      <ul class="space-y-4">
+        <li><a class="footer-link" href="history_roadmap.html">About PHE</a></li>
+        <li><a class="footer-link" href="infra_process.html">Infrastructure</a></li>
+        <li><a class="footer-link" href="contact_operations.html">Contact & Support</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4 class="text-white font-headline font-bold uppercase tracking-widest text-xs mb-6">Headquarters</h4>
+      <address class="not-italic space-y-3">
+        <p class="text-teal-200/70 text-sm">24/A1, PN Road, Kunnathur,<br>Tiruppur, Tamil Nadu 638103</p>
+        <a href="tel:+919786500188" class="footer-link block">+91 97865 00188</a>
+        <a href="tel:+919786500288" class="footer-link block">+91 97865 00288</a>
+        <a href="mailto:info@pheindia.com" class="footer-link block">info@pheindia.com</a>
+      </address>
+    </div>
+  </div>
+  <div class="max-w-screen-2xl mx-auto px-6 mt-12 pt-8 border-t border-teal-900/60 flex flex-col md:flex-row justify-between items-center gap-4">
+    <p class="text-teal-200/50 text-xs font-body tracking-wide">© 2025 Periyasamy Hydraulic Equipments. Precision Engineered.</p>
+  </div>
+</footer>
+
+<script src="../js/main.js"></script>
+</body>
+</html>

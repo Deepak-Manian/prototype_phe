@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>Infrastructure & Process — PHE | Periyasamy Hydraulic Equipments</title>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@400;500;600&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "surface-dim": "#dadada", "surface-bright": "#f9f9f9", "surface": "#f9f9f9",
+            "primary": "#003131", "on-primary": "#ffffff", "on-tertiary": "#ffffff", "on-secondary": "#ffffff",
+            "on-primary-fixed": "#00201f", "surface-container-low": "#f3f3f3", "surface-container": "#eeeeee",
+            "on-secondary-fixed": "#251a00", "inverse-primary": "#9cd0ce", "secondary": "#785a00",
+            "on-primary-container": "#84b7b5", "on-surface-variant": "#404848", "on-secondary-container": "#6d5200",
+            "on-primary-fixed-variant": "#184e4d", "on-background": "#1a1c1c", "on-tertiary-container": "#afaeae",
+            "tertiary-container": "#414242", "tertiary-fixed-dim": "#c7c6c6", "secondary-fixed-dim": "#f9be00",
+            "on-error": "#ffffff", "primary-container": "#114948", "on-error-container": "#93000a",
+            "surface-container-highest": "#e2e2e2", "primary-fixed": "#b8ecea", "outline-variant": "#bfc8c7",
+            "primary-fixed-dim": "#9cd0ce", "on-surface": "#1a1c1c", "secondary-container": "#ffc30a",
+            "background": "#f9f9f9", "inverse-surface": "#2f3131", "on-tertiary-fixed": "#1b1c1c",
+            "tertiary-fixed": "#e3e2e2", "surface-container-lowest": "#ffffff", "outline": "#707978",
+            "error-container": "#ffdad6", "secondary-fixed": "#ffdf9b", "inverse-on-surface": "#f1f1f1",
+            "error": "#ba1a1a", "on-tertiary-fixed-variant": "#464747", "tertiary": "#2b2c2c",
+            "surface-container-high": "#e8e8e8", "on-secondary-fixed-variant": "#5b4300",
+            "surface-variant": "#e2e2e2", "surface-tint": "#346665"
+          },
+          borderRadius: { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" },
+          fontFamily: { "headline": ["Space Grotesk"], "body": ["Inter"], "label": ["Work Sans"] }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="../css/theme.css"/>
+</head>
+<body class="bg-surface text-on-surface font-body">
+
+<!-- MOBILE NAV -->
+<div id="mobile-nav">
+  <button id="mobile-nav-close" aria-label="Close menu">
+    <span class="material-symbols-outlined text-white text-4xl">close</span>
+  </button>
+  <a href="../index.html">Home</a>
+  <a href="product_catalog.html">Rig Fleet</a>
+  <a href="history_roadmap.html">About Us</a>
+  <a href="infra_process.html" class="active">Infrastructure</a>
+  <a href="contact_operations.html">Contact</a>
+  <a href="contact_operations.html" style="color:#ffc30a; margin-top:1rem;">Request Quote</a>
+</div>
+
+<!-- NAV -->
+<nav class="fixed top-0 w-full z-50 bg-teal-950/95 backdrop-blur-md shadow-2xl shadow-teal-950/20">
+  <div class="flex justify-between items-center w-full px-8 py-4 max-w-screen-2xl mx-auto">
+    <a href="../index.html">
+      <img alt="PHE Logo" class="logo-img w-auto object-contain h-10 md:h-14" src="../phe_logo.png"/>
+    </a>
+    <div class="hidden md:flex items-center space-x-8">
+      <a class="nav-link text-sm uppercase text-slate-100/80 hover:text-white transition-colors" href="../index.html">Home</a>
+      <a class="nav-link text-sm uppercase text-slate-100/80 hover:text-white transition-colors" href="product_catalog.html">Rig Fleet</a>
+      <a class="nav-link text-sm uppercase text-slate-100/80 hover:text-white transition-colors" href="history_roadmap.html">About Us</a>
+      <a class="nav-link nav-link-active text-sm uppercase" href="infra_process.html">Infrastructure</a>
+      <a class="nav-link text-sm uppercase text-slate-100/80 hover:text-white transition-colors" href="contact_operations.html">Contact</a>
+    </div>
+    <div class="flex items-center gap-4">
+      <a href="contact_operations.html" class="btn-secondary px-6 py-2.5 text-sm machined-edge hidden md:block">Request Quote</a>
+      <button id="mobile-nav-open" class="md:hidden text-white" aria-label="Open menu">
+        <span class="material-symbols-outlined">menu</span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="pt-32 pb-20 bg-primary relative overflow-hidden">
+  <div class="absolute inset-0 opacity-20">
+    <img src="../infra.jpg" alt="" class="w-full h-full object-cover"/>
+  </div>
+  <div class="container mx-auto px-8 relative z-10">
+    <span class="text-secondary-container font-label font-bold uppercase tracking-widest text-sm">Our Facility</span>
+    <h1 class="font-headline text-5xl md:text-7xl font-black text-white mt-4 mb-6 leading-none tracking-tighter">Built to<br>Perform</h1>
+    <p class="text-on-primary-container text-xl max-w-2xl leading-relaxed">
+      Five vertically integrated manufacturing units under one roof — delivering precision-engineered rigs with the speed, scale, and consistency the industry demands.
+    </p>
+  </div>
+</section>
+
+<!-- FACILITY STATS -->
+<div class="bg-secondary-container py-10">
+  <div class="container mx-auto px-8">
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+      <div class="text-center">
+        <div class="font-headline text-4xl font-black text-on-secondary-container">5</div>
+        <div class="font-label text-xs uppercase tracking-[0.2em] text-on-secondary-container/80 mt-1">Acres of Land</div>
+      </div>
+      <div class="text-center">
+        <div class="font-headline text-4xl font-black text-on-secondary-container">3L</div>
+        <div class="font-label text-xs uppercase tracking-[0.2em] text-on-secondary-container/80 mt-1">Sq. Ft. Facility</div>
+      </div>
+      <div class="text-center">
+        <div class="font-headline text-4xl font-black text-on-secondary-container">300+</div>
+        <div class="font-label text-xs uppercase tracking-[0.2em] text-on-secondary-container/80 mt-1">Vehicles/Year</div>
+      </div>
+      <div class="text-center">
+        <div class="font-headline text-4xl font-black text-on-secondary-container">5</div>
+        <div class="font-label text-xs uppercase tracking-[0.2em] text-on-secondary-container/80 mt-1">Production Units</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- FACILITY IMAGE -->
+<section class="py-24 bg-surface">
+  <div class="container mx-auto px-8">
+    <div class="grid lg:grid-cols-2 gap-16 items-center mb-24">
+      <div class="anim-fade-up">
+        <span class="text-secondary font-label font-bold uppercase tracking-widest text-sm">Our Facility</span>
+        <h2 class="font-headline text-4xl font-bold mt-4 mb-8 leading-tight">World-Class Manufacturing in Kunnathur</h2>
+        <p class="text-on-surface-variant leading-relaxed text-lg mb-6">
+          PHE's manufacturing unit spans five acres in Kunnathur, Tiruppur — housing 3 lakh sq. ft. of machining, fabrication, and assembly facilities operating at global standards.
+        </p>
+        <p class="text-on-surface-variant leading-relaxed mb-8">
+          Tied up with global industry leaders for base component supply, PHE combines world-class parts with in-house precision manufacturing to produce rigs that outperform and outlast expectations.
+        </p>
+        <div class="flex gap-4">
+          <div class="border-l-4 border-secondary-container pl-4">
+            <div class="font-headline font-bold">State-of-the-Art Technology</div>
+            <div class="text-sm text-on-surface-variant">For production and on-site installation</div>
+          </div>
+        </div>
+      </div>
+      <div class="relative anim-fade-up delay-1">
+        <div class="absolute -top-6 -right-6 w-32 h-32 border-t-4 border-r-4 border-secondary-container"></div>
+        <img alt="PHE Manufacturing Facility" class="relative z-10 w-full object-cover shadow-2xl" src="../infra.jpg"/>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS STEPS -->
+<section class="py-24 bg-surface-container-low">
+  <div class="container mx-auto px-8">
+    <div class="text-center mb-16 anim-fade-up">
+      <span class="text-secondary font-label font-bold uppercase tracking-widest text-sm">How We Build</span>
+      <h2 class="font-headline text-4xl font-bold mt-4 mb-4">Five Units. One Standard.</h2>
+      <p class="text-on-surface-variant max-w-xl mx-auto">The production unit is PHE's greatest asset. Five integrated manufacturing units under one roof enable timely delivery without downtime.</p>
+    </div>
+
+    <div class="space-y-6 max-w-4xl mx-auto">
+
+      <!-- Step 1 -->
+      <div class="process-step bg-surface-container-lowest p-8 flex gap-8 items-start anim-fade-up group hover:shadow-lg transition-shadow">
+        <div class="process-step-circle flex-shrink-0">
+          <span class="font-headline font-black text-lg">01</span>
+        </div>
+        <div class="flex-grow">
+          <div class="flex items-center gap-3 mb-3">
+            <span class="material-symbols-outlined text-primary text-2xl">architecture</span>
+            <h3 class="font-headline text-xl font-bold">Designing & R&D</h3>
+          </div>
+          <p class="text-on-surface-variant leading-relaxed">
+            The technology-driven strong R&D team handles the design part of every rig. Each and every customer feedback is analyzed and taken into much care in rig designing. The knowledge resource pool of PHE is tremendous, providing innovative solutions for any operational challenge.
+          </p>
+        </div>
+        <div class="hidden md:block w-32 text-right">
+          <span class="text-xs font-label font-bold uppercase tracking-widest text-on-surface-variant">Unit 01</span>
+        </div>
+      </div>
+
+      <!-- Step 2 -->
+      <div class="process-step bg-surface-container-lowest p-8 flex gap-8 items-start anim-fade-up delay-1 group hover:shadow-lg transition-shadow">
+        <div class="process-step-circle flex-shrink-0">
+          <span class="font-headline font-black text-lg">02</span>
+        </div>
+        <div class="flex-grow">
+          <div class="flex items-center gap-3 mb-3">
+            <span class="material-symbols-outlined text-primary text-2xl">precision_manufacturing</span>
+            <h3 class="font-headline text-xl font-bold">Fabrication Unit</h3>
+          </div>
+          <p class="text-on-surface-variant leading-relaxed">
+            PHE's fabrication unit assembles major structural components with the help of robotic KUKA welding — adding a level of perfection to the product that manual welding simply cannot match. This advanced welding capability has eased critical taskforce demands on manual labour while ensuring structural integrity under extreme field conditions.
+          </p>
+        </div>
+        <div class="hidden md:block w-32 text-right">
+          <span class="text-xs font-label font-bold uppercase tracking-widest text-on-surface-variant">Unit 02</span>
+        </div>
+      </div>
+
+      <!-- Step 3 -->
+      <div class="process-step bg-surface-container-lowest p-8 flex gap-8 items-start anim-fade-up delay-2 group hover:shadow-lg transition-shadow">
+        <div class="process-step-circle flex-shrink-0">
+          <span class="font-headline font-black text-lg">03</span>
+        </div>
+        <div class="flex-grow">
+          <div class="flex items-center gap-3 mb-3">
+            <span class="material-symbols-outlined text-primary text-2xl">settings</span>
+            <h3 class="font-headline text-xl font-bold">Hydraulic Assembly Unit</h3>
+          </div>
+          <p class="text-on-surface-variant leading-relaxed">
+            A technically skilled team ensures the quality of sub-assemblies — the critical backbone of any total rig unit. Every hydraulic circuit, cylinder, and connection is inspected and tested before proceeding to final assembly.
+          </p>
+        </div>
+        <div class="hidden md:block w-32 text-right">
+          <span class="text-xs font-label font-bold uppercase tracking-widest text-on-surface-variant">Unit 03</span>
+        </div>
+      </div>
+
+      <!-- Step 4 -->
+      <div class="process-step bg-surface-container-lowest p-8 flex gap-8 items-start anim-fade-up group hover:shadow-lg transition-shadow">
+        <div class="process-step-circle flex-shrink-0">
+          <span class="font-headline font-black text-lg">04</span>
+        </div>
+        <div class="flex-grow">
+          <div class="flex items-center gap-3 mb-3">
+            <span class="material-symbols-outlined text-primary text-2xl">memory</span>
+            <h3 class="font-headline text-xl font-bold">CNC Machine Shop</h3>
+          </div>
+          <p class="text-on-surface-variant leading-relaxed">
+            PHE owns and operates its own CNC machine shop to ensure every part is self-designed and manufactured to the highest standard without defects. The strong workforce of our R&D and hardware technology team ensures every single component is designed to niche precision — built to endure the hardcore usage demands of heavy drilling machinery in extreme conditions.
+          </p>
+        </div>
+        <div class="hidden md:block w-32 text-right">
+          <span class="text-xs font-label font-bold uppercase tracking-widest text-on-surface-variant">Unit 04</span>
+        </div>
+      </div>
+
+      <!-- Step 5 -->
+      <div class="process-step bg-primary text-white p-8 flex gap-8 items-start anim-fade-up delay-1 group">
+        <div class="flex-shrink-0 w-12 h-12 bg-secondary-container text-on-secondary-container flex items-center justify-center rounded-full">
+          <span class="font-headline font-black text-lg">05</span>
+        </div>
+        <div class="flex-grow">
+          <div class="flex items-center gap-3 mb-3">
+            <span class="material-symbols-outlined text-secondary-container text-2xl">sensors</span>
+            <h3 class="font-headline text-xl font-bold">Sensor Assembly Unit</h3>
+          </div>
+          <p class="text-on-primary-container leading-relaxed">
+            The innovation of sensor mounting technology by PHE is a greater asset to the rig manufacturing industry. This technology has enabled user-friendly, safe drilling solutions that enrich the lives of operators, protect the environment, and drive universal progress. The sensor assembly unit ensures every rig leaves the factory calibrated for optimal, safe, productive performance.
+          </p>
+        </div>
+        <div class="hidden md:block w-32 text-right">
+          <span class="text-xs font-label font-bold uppercase tracking-widest text-on-primary-container">Unit 05</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY STRIP -->
+<section class="py-0 overflow-hidden">
+  <div class="grid grid-cols-2 md:grid-cols-4 h-64">
+    <div class="overflow-hidden"><img src="../5.jpg" alt="PHE Manufacturing" class="w-full h-full object-cover hover:scale-110 transition-transform duration-700 grayscale hover:grayscale-0"/></div>
+    <div class="overflow-hidden"><img src="../6.jpg" alt="PHE Rig Assembly" class="w-full h-full object-cover hover:scale-110 transition-transform duration-700 grayscale hover:grayscale-0"/></div>
+    <div class="overflow-hidden"><img src="../7.jpg" alt="PHE Facility" class="w-full h-full object-cover hover:scale-110 transition-transform duration-700 grayscale hover:grayscale-0"/></div>
+    <div class="overflow-hidden"><img src="../infra.jpg" alt="PHE Workshop" class="w-full h-full object-cover hover:scale-110 transition-transform duration-700 grayscale hover:grayscale-0"/></div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="py-24 bg-surface text-center">
+  <div class="container mx-auto px-8 max-w-3xl">
+    <h2 class="font-headline text-4xl font-bold mb-6">Ready to Commission Your Rig?</h2>
+    <p class="text-on-surface-variant text-lg mb-10">Speak with our engineers about your project requirements. PHE delivers on time, every time.</p>
+    <div class="flex flex-wrap gap-4 justify-center">
+      <a href="contact_operations.html" class="btn-secondary px-10 py-5 font-black machined-edge inline-block uppercase tracking-widest">Get in Touch</a>
+      <a href="product_catalog.html" class="bg-primary text-white px-10 py-5 font-black inline-block uppercase tracking-widest hover:bg-primary-container transition-colors">View Products</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-teal-950 w-full pt-16 pb-8">
+  <div class="grid grid-cols-1 md:grid-cols-4 gap-12 max-w-screen-2xl mx-auto px-6">
+    <div>
+      <img alt="PHE Logo" class="logo-img h-12 w-auto object-contain mb-6" src="../phe_logo.png"/>
+      <p class="text-teal-200/70 text-sm leading-relaxed font-body max-w-xs">Setting the global standard for high-performance drilling equipment through relentless engineering excellence.</p>
+      <div class="flex gap-4 mt-6">
+        <a href="mailto:info@pheindia.com" class="text-teal-200/50 hover:text-amber-400 transition-colors"><span class="material-symbols-outlined">mail</span></a>
+        <a href="tel:+919786500188" class="text-teal-200/50 hover:text-amber-400 transition-colors"><span class="material-symbols-outlined">call</span></a>
+      </div>
+    </div>
+    <div>
+      <h4 class="text-white font-headline font-bold uppercase tracking-widest text-xs mb-6">Products</h4>
+      <ul class="space-y-4">
+        <li><a class="footer-link" href="product_catalog.html">Water Well Rigs</a></li>
+        <li><a class="footer-link" href="product_catalog.html">Mines & Water Well</a></li>
+        <li><a class="footer-link" href="product_catalog.html">Reverse Circulation</a></li>
+        <li><a class="footer-link" href="product_catalog.html">Pole Drill</a></li>
+        <li><a class="footer-link" href="product_catalog.html">Support Vehicles</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4 class="text-white font-headline font-bold uppercase tracking-widest text-xs mb-6">Company</h4>
+      <ul class="space-y-4">
+        <li><a class="footer-link" href="history_roadmap.html">About PHE</a></li>
+        <li><a class="footer-link" href="infra_process.html">Infrastructure</a></li>
+        <li><a class="footer-link" href="contact_operations.html">Contact & Support</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4 class="text-white font-headline font-bold uppercase tracking-widest text-xs mb-6">Headquarters</h4>
+      <address class="not-italic space-y-3">
+        <p class="text-teal-200/70 text-sm">24/A1, PN Road, Kunnathur,<br>Tiruppur, Tamil Nadu 638103</p>
+        <a href="tel:+919786500188" class="footer-link block">+91 97865 00188</a>
+        <a href="tel:+919786500288" class="footer-link block">+91 97865 00288</a>
+        <a href="mailto:info@pheindia.com" class="footer-link block">info@pheindia.com</a>
+      </address>
+    </div>
+  </div>
+  <div class="max-w-screen-2xl mx-auto px-6 mt-12 pt-8 border-t border-teal-900/60 flex flex-col md:flex-row justify-between items-center gap-4">
+    <p class="text-teal-200/50 text-xs font-body tracking-wide">© 2025 Periyasamy Hydraulic Equipments. Precision Engineered.</p>
+  </div>
+</footer>
+
+<script src="../js/main.js"></script>
+</body>
+</html>
