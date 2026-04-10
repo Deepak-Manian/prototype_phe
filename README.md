@@ -1,6 +1,6 @@
 # PHE — Periyasamy Hydraulic Equipments
 
-Official website for **Periyasamy Hydraulic Equipments (PHE)**, a Tiruppur-based manufacturer of precision-engineered drilling rigs with 38+ years of industry expertise.
+prototype website for **Periyasamy Hydraulic Equipments (PHE)**, a Tiruppur-based manufacturer of precision-engineered drilling rigs with 38+ years of industry expertise.
 
 ---
 
